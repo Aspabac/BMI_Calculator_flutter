@@ -9,10 +9,10 @@ const gapSize = 15.0;
 
 
 class IconContent extends StatelessWidget {
-  IconContent({this.icon, this.gender});
+  IconContent({this.icon, this.label});
 
   final IconData icon;
-  final String gender;
+  final String label;
 
   @override
   Widget build(BuildContext context) {
@@ -27,7 +27,7 @@ class IconContent extends StatelessWidget {
           height: gapSize,
         ),
         Text(
-          gender,
+          label,
           style: genderTextStyle,
         )
       ],
