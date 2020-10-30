@@ -1,11 +1,5 @@
 import 'package:flutter/material.dart';
-
-const genderTextStyle = TextStyle(
-  fontSize: 18.0,
-  color: Color(0xFF8D8E98),
-);
-const iconSize = 80.0;
-const gapSize = 15.0;
+import 'package:bmi_calculator/constants.dart';
 
 
 class IconContent extends StatelessWidget {
@@ -21,14 +15,14 @@ class IconContent extends StatelessWidget {
       children: [
         Icon(
           icon,
-          size: iconSize,
+          size: kIconSize,
         ),
         SizedBox(
-          height: gapSize,
+          height: kGapSize,
         ),
         Text(
-          label,
-          style: genderTextStyle,
+          label ,
+          style: kLabelTextStyle,
         )
       ],
     );
